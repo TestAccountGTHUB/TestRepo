@@ -1,0 +1,1 @@
+mvn test -DtestPlatform=Android
