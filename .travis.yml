@@ -8,8 +8,8 @@ before_install:
   - sudo apt-get update
   - sudo apt-get install nodejs
   - sudo apt-get install npm
-  - npm install -g npm
-  - npm install -g appium
+  - sudo npm install -g npm
+  - sudo npm install -g appium
 env:
   global:
   - NODE_VERSION="0.12"
