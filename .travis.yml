@@ -5,8 +5,10 @@ jdk: oraclejdk8
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y pax
+  - sudo nvm install $NODE_VERSION
 env:
   global:
+  - NODE_VERSION="0.12"
   - ANDROID_API_LEVEL=26
   - ANDROID_BUILD_TOOLS_VERSION=26.0.1
   - ANDROID_EMU_API_LEVEL=22
