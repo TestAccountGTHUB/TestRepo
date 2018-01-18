@@ -1,2 +1,2 @@
 script:
- - mvn test -DtestPlatform=Android
+ - mvn test -DtestPlatform=IOS
