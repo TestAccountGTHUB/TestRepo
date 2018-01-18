@@ -5,17 +5,16 @@ jdk: oraclejdk8
 android:
   components:
     - tools
-    - build-tools-26.0.2
-    - android-26
-    - extra-android-support
-    - extra-google-google_play_services
+    - tools # This is not a typo. Needed for SDK update.
+    - platform-tools
+    - android-24 
+    - build-tools-24.0.1
     - extra-android-m2repository
-    - extra-google-m2repository
-    - addon-google_apis-google-26
-    - sys-img-armeabi-v7a-android-26
+    - sys-img-armeabi-v7a-android-15
+    - sys-img-armeabi-v7a-android-21
 script:
     # Create two emulator avds.
-  - echo no | android create avd --force -n test -t android-26 --abi armeabi-v7a
+  - echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
   
     # Start the first emulator.
   - emulator -avd test -no-skin -no-audio -no-window &
