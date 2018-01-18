@@ -7,7 +7,6 @@ before_install:
   - sudo apt-get install -y pax
   - sudo apt-get update
   - sudo apt-get install -y nodejs
-  - sudo apt-get npm install
   - sudo npm install -g appium
 env:
   global:
