@@ -6,9 +6,8 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y pax
   - sudo apt-get update
-  - sudo brew update
-  - sudo brew install node
-  - sudo brew link node
+  - sudo apt-get install -y nodejs
+  - sudo apt-get npm install npm@latest -g
   - sudo npm install -g appium
 env:
   global:
