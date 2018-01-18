@@ -1,0 +1,65 @@
+ [
+  {
+  "instance": "158d5b38-b5b8-4019-ac3c-4ad1e971f36a",
+  "lastModifiedTime": "2017-11-03T08:20:27.476Z",
+  "description": "Suggested Questions for Doctors",
+  "isActive": true,
+  "type": "b226d1c6-61d9-45f7-a57d-8da5fb19c1af",
+  "createTime": "2017-11-02T20:26:07.210Z",
+  "createdBy": "42d78412-c96a-4581-97fd-d4f315ead735",
+  "name": "Suggested Questions for Doctors",
+  "attributes": {
+  "questions": [
+                {
+                "help": "",
+                "questionId": "drupalQuestionnaireID2Question1ID",
+                "questionText": "How effective are anticoagulants at reducing stroke risk?",
+                "order": 1
+                },
+                {
+                "help": "",
+                "questionId": "drupalQuestionnaireID2Question2ID",
+                "questionText": "How much does this treatment cost me?",
+                "order": 2
+                },
+                {
+                "help": "",
+                "questionId": "drupalQuestionnaireID2Question3ID",
+                "questionText": "How will my life will change if I have a stroke ?",
+                "order": 3
+                },
+                {
+                "help": "",
+                "questionId": "drupalQuestionnaireID2Question4ID",
+                "questionText": "What happens if I choose not to have treatemnt?",
+                "order": 4
+                },
+                {
+                "help": "",
+                "questionId": "drupalQuestionnaireID2Question5ID",
+                "questionText": "What type of laboratory monitoring will I need?",
+                "order": 5
+                },
+                {
+                "help": "",
+                "questionId": "drupalQuestionnaireID2Question6ID",
+                "questionText": "Do I need to avoid any and food, drinks, or activities if I go on an anticoagulant?",
+                "order": 6
+                },
+                {
+                "help": "",
+                "questionId": "drupalQuestionnaireID2Question7ID",
+                "questionText": "How can I learn more about AFib and its treatment?",
+                "order": 7
+                }
+                ],
+  "purpose": "Suggested topics to ask the doctor",
+  "questionnaireId": "drupalQuestionnaireID2",
+  "version": 1
+  },
+  "modifiedBy": "42d78412-c96a-4581-97fd-d4f315ead735",
+  "id": "9e588680-7e1e-4fe7-9ee6-29b12a86fc9e",
+  "lang": "en",
+  "resourceType": "asset"
+  }
+  ]

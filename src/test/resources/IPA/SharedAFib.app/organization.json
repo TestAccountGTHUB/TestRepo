@@ -1,0 +1,26 @@
+ [
+  {
+      "instance": "158d5b38-b5b8-4019-ac3c-4ad1e971f36a",
+      "lastModifiedTime": "2017-11-06T10:21:42.075Z",
+      "description": "Another organization participating in the Shared AFib program.",
+      "isActive": true,
+      "type": "d2795805-d51e-4707-a913-48ce5f5c3943",
+      "createTime": "2017-11-02T19:35:09.213Z",
+      "createdBy": "42d78412-c96a-4581-97fd-d4f315ead735",
+      "name": "Cardiology 'R Us",
+      "attributes": {
+        "organizationId": "drupalOrganizationID2",
+        "contactEmail": "drus@cardiologyrus.com",
+        "contactName": "Dr. Us",
+        "submissionEmail": "afibpdf@scardiologyrus.com",
+        "referralCode": "2000",
+        "name": "Cariology R Us",
+        "welcome": "So happy to see you! We at CRU support a patient and provider Shared Decision Making process to encourage and empower decisions on therapy.",
+        "logoURL": "https://s3-eu-west-1.amazonaws.com/pfe.newtonproject.dev.asset.artifacts/assets/afib/cardiologyrus.png"
+      },
+      "modifiedBy": "42d78412-c96a-4581-97fd-d4f315ead735",
+      "id": "8730f790-1ca7-483a-ae9f-7c7063f8b83e",
+      "lang": "en",
+      "resourceType": "asset"
+  }
+  ]

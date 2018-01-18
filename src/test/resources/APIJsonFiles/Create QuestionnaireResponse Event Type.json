@@ -1,0 +1,9 @@
+
+{
+  "isActive":true,
+  "name": "SDQuestionnaireResponse",
+  "description": "Stores Individual Assessment results anonymously",
+  "syncToMarketo":true,
+  "attributes": {
+  }
+}

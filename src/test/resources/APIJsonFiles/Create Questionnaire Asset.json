@@ -1,0 +1,110 @@
+{
+    "name": "CHAS-VASc-Questionnaire",
+    "type": "BLANK", 
+    "description": "This is the questionnaire for CHAS-VASc",
+    "lang": "en",
+    "attributes": {
+      "quesstionnaireId": "4532-7896-0009-8897", 
+      "animationType": "SOME ANIMATIONS",
+      "imageURL": "http://S3URL/image", 
+      "purpose": "This is the purpose of the questionnaire",
+      "version": 1, 
+      "questions": [
+        {
+          "questionId": "1234-5678-9101-8898", 
+          "order": 1, 
+          "imageURL": "http://S3URL/image", 
+          "help": "<html>CLotting factor</html>", 
+          "questionText": "What is your clot time?", 
+          "questionType": "PATIENT|MUTEX|GATE", 
+          "responseOptions": [
+            {
+              "responseControlType": "BUTTON|INPUT|CHECK", 
+              "optionId": "6632-7767-9999-5432", 
+              "order": 1, 
+              "excludeStorage": "true|false", 
+              "responseDesc": "How much time does it take for your blood to clot once you get hurt?", 
+              "responseText": "5 mins", 
+              "responseScoreValues": {
+                "chadsVascValue": "0|1|2",  
+                "riskFactor": "0|1" 
+              }
+            },
+            {
+              "responseControlType": "BUTTON|INPUT|CHECK", 
+              "optionId": "6632-7767-9999-5432",
+              "order": 1, 
+              "excludeStorage": "true|false", 
+              "responseDesc": "How much time does it take for your blood to clot once you get hurt?",  
+              "responseText": "5 mins", 
+              "responseScoreValues": {
+                "chadsVascValue": "0|1|2", 
+                "riskFactor": "0|1" 
+              }
+            },
+            {
+              "responseControlType": "BUTTON|INPUT|CHECK",
+              "optionId": "6632-7767-9999-5432", 
+              "order": 1, 
+              "excludeStorage": "true|false", 
+              "responseDesc": "How much time does it take for your blood to clot once you get hurt?", 
+              "responseText": "5 mins", 
+              "responseScoreValues": {
+                "chadsVascValue": "0|1|2",  
+                "riskFactor": "0|1" 
+              }
+            },
+        
+          
+        {
+          "questionId": "1234-5678-9101-8898",
+          "order": 1, 
+          "imageURL": "http://S3URL/image", 
+          "help": "<html>CLotting factor</html>", 
+          "questionText": "What is your clot time?", 
+          "questionType": "PATIENT|MUTEX|GATE",
+          "responseOptions": [
+            {
+              "responseControlType": "BUTTON|INPUT|CHECK", 
+              "optionId": "6632-7767-9999-5432", 
+              "order": 1, 
+              "excludeStorage": "true|false",
+              "responseDesc": "How much time does it take for your blood to clot once you get hurt?", 
+              "responseText": "5 mins", 
+              "responseScoreValues": {
+                "chadsVascValue": "0|1|2",  
+                "riskFactor": "0|1" 
+              }
+            },
+            {
+              "responseControlType": "BUTTON|INPUT|CHECK", 
+              "optionId": "6632-7767-9999-5432", 
+              "order": 1, 
+              "excludeStorage": "true|false", 
+              "responseDesc": "How much time does it take for your blood to clot once you get hurt?", 
+              "responseText": "5 mins", 
+              "responseScoreValues": {
+                "chadsVascValue": "0|1|2", 
+                "riskFactor": "0|1" 
+              }
+            },
+            {
+              "responseControlType": "BUTTON|INPUT|CHECK",
+              "optionId": "6632-7767-9999-5432", 
+              "order": 1, 
+              "excludeStorage": "true|false", 
+              "responseDesc": "How much time does it take for your blood to clot once you get hurt?", 
+              "responseText": "5 mins", 
+              "responseScoreValues": {
+                "chadsVascValue": "0|1|2", 
+                "riskFactor": "0|1" 
+              }
+            }
+          ]
+        }
+      ]
+    }
+    ]
+    }
+}
+  

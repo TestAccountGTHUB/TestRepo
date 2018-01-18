@@ -1,0 +1,32 @@
+2018-01-17 20:16:27 INFO  - Term And Policy CheckBox has been clicked
+2018-01-17 20:16:31 INFO  - I Agree Button has been clicked
+2018-01-17 20:16:33 INFO  - Start Button has been clicked
+2018-01-17 20:16:35 INFO  - Skip Step Link has been clicked
+2018-01-17 20:16:36 INFO  - Take New Risk Questionnaire Button is Displayed
+2018-01-17 20:16:37 INFO  - Take New Risk Questionnaire Buttone Button has been clicked
+2018-01-17 20:16:39 INFO  - Take Risk Questionnaire Button is Displayed
+2018-01-17 20:16:41 INFO  - Take Risk Questionnaire Button has been clicked
+2018-01-17 20:16:51 INFO  - First Name Text Box is entered
+2018-01-17 20:17:00 INFO  - Last Name Text Box is entered
+2018-01-17 20:17:01 INFO  - Enter Name CheckBox has been clicked
+2018-01-17 20:17:02 INFO  - Let's Begin Button has been clicked
+2018-01-17 20:17:11 INFO  - getQuestionnaireExample API Test is Pass
+2018-01-17 20:17:11 INFO  - Question 1 has been clicked
+2018-01-17 20:17:13 INFO  - Question 2 has been clicked
+2018-01-17 20:17:14 INFO  - Question 3 has been clicked
+2018-01-17 20:17:16 INFO  - Question 4 has been clicked
+2018-01-17 20:17:17 INFO  - Question 5 has been clicked
+2018-01-17 20:17:18 INFO  - Question 6 has been clicked
+2018-01-17 20:17:20 INFO  - Question 7 has been clicked
+2018-01-17 20:17:21 INFO  - Question 8 has been clicked
+2018-01-17 20:17:23 INFO  - Question 9 has been clicked
+2018-01-17 20:17:24 INFO  - Review Button has been clicked
+2018-01-17 20:17:25 INFO  - Continue Button has been clicked
+2018-01-17 20:17:26 INFO  - Value has been fetched from Summary Title
+2018-01-17 20:17:27 INFO  - Risk Factor Continue Button has been clicked
+2018-01-17 20:17:30 INFO  - FAQ1 has been clicked
+2018-01-17 20:17:31 INFO  - FAQ2 has been clicked
+2018-01-17 20:17:33 INFO  - FAQ3 has been clicked
+2018-01-17 20:17:34 INFO  - Review Session Summary has been clicked
+2018-01-17 20:17:36 INFO  - Complete For Review with HCP has been clicked
+2018-01-17 20:17:37 INFO  - Share with HCP is visible

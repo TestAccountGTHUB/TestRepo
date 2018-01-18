@@ -1,0 +1,400 @@
+ [
+  {
+  "instance": "158d5b38-b5b8-4019-ac3c-4ad1e971f36a",
+  "lastModifiedTime": "2017-11-22T10:44:12.729Z",
+  "description": "CHADS-VASc Questionnaire for Shared AFib users",
+  "isActive": true,
+  "type": "e46b7c72-49bc-4e26-81aa-e51fab4d1e79",
+  "createTime": "2017-11-03T08:45:29.046Z",
+  "createdBy": "42d78412-c96a-4581-97fd-d4f315ead735",
+  "name": "Risk Questionnaire",
+  "attributes": {
+  "purpose": "",
+  "imageURL": "https://somepath/someimage.png",
+  "questions": [
+                {
+                "help": "",
+                "questionId": "drupalQuestion1ID",
+                "responseItems": [
+                                  {
+                                  "optionId": "drupalQuestion1Option1ID",
+                                  "responseControlType": "INPUT",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "excludeStorage": 1,
+                                  "riskFactor": "",
+                                  "chadsVascValue": ""
+                                  },
+                                  "responseText": "First Name",
+                                  "order": 1
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion1Option2ID",
+                                  "responseControlType": "INPUT",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "excludeStorage": 1,
+                                  "riskFactor": "",
+                                  "chadsVascValue": ""
+                                  },
+                                  "responseText": "Last Name",
+                                  "order": 2
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion1Option3ID",
+                                  "responseControlType": "CHECK",
+                                  "responseDesc": "Please enter patient’s name above and complete the questionnaire on their behalf.",
+                                  "responseScoreValues": {
+                                  "riskFactor": "",
+                                  "chadsVascValue": ""
+                                  },
+                                  "responseText": "Caregiver",
+                                  "order": 3
+                                  }
+                                  ],
+                "imageURL": "https://s3-eu-west-1.amazonaws.com/pfe.newtonproject.dev.asset.artifacts/assets/afib/group_9.png",
+                "questionType": "PATIENT",
+                "questionText": "What is the name of the patient?",
+                "order": 1
+                },
+                {
+                "help": "",
+                "questionId": "drupalQuestionID2",
+                "responseItems": [
+                                  {
+                                  "optionId": "drupalQuestion2Option1ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "",
+                                  "chadsVascValue": ""
+                                  },
+                                  "responseText": "Yes",
+                                  "order": 1
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion2Option2ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "*You have chosen “No”. This assessment might not be suitable for you*",
+                                  "responseScoreValues": {
+                                  "riskFactor": "",
+                                  "chadsVascValue": ""
+                                  },
+                                  "responseText": "No",
+                                  "order": 2
+                                  }
+                                  ],
+                "imageURL": "https://s3-eu-west-1.amazonaws.com/pfe.newtonproject.dev.asset.artifacts/assets/afib/reason.png",
+                "questionType": "GATE",
+                "questionText": "Have you ever been diagnosed with AFib?",
+                "order": 2
+                },
+                {
+                "help": "",
+                "questionSummary": "Age",
+                "questionId": "drupalQuestionID3",
+                "responseItems": [
+                                  {
+                                  "optionId": "drupalQuestion3Option1ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Not a Risk",
+                                  "chadsVascValue": "0"
+                                  },
+                                  "responseText": "Below 65",
+                                  "order": 1
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion3Option2ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Risk",
+                                  "chadsVascValue": "1"
+                                  },
+                                  "responseText": "65-75",
+                                  "order": 2
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion3Option3ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Risk",
+                                  "chadsVascValue": "2"
+                                  },
+                                  "responseText": "Above 75",
+                                  "order": 3
+                                  }
+                                  ],
+                "imageURL": "https://s3-eu-west-1.amazonaws.com/pfe.newtonproject.dev.asset.artifacts/assets/afib/age.png",
+                "questionType": "MUTEX",
+                "questionText": "How old are you?",
+                "order": 3
+                },
+                {
+                "help": "",
+                "questionSummary": "Gender",
+                "questionId": "drupalQuestionID4",
+                "responseItems": [
+                                  {
+                                  "optionId": "drupalQuestion4Option1ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Not a Risk",
+                                  "chadsVascValue": "0"
+                                  },
+                                  "responseText": "Male",
+                                  "order": 1
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion4Option2ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Risk",
+                                  "chadsVascValue": "1"
+                                  },
+                                  "responseText": "Female",
+                                  "order": 2
+                                  }
+                                  ],
+                "imageURL": "https://s3-eu-west-1.amazonaws.com/pfe.newtonproject.dev.asset.artifacts/assets/afib/gender.png",
+                "questionType": "MUTEX",
+                "questionText": "What is your sex?",
+                "order": 4
+                },
+                {
+                "help": "<!DOCTYPE html><html><head><title>Shared Afib</title><style>body {font-family: -apple-system, BlinkMacSystemFont, sans-serif;width: 344px;text-align: center;}h1 {font-size: 20px;color: #3B88A1;font-weight: 700;padding-top: 24px;margin-bottom: 8px;}h2 {font-size: 15px;color: #4A4A4A;font-weight: 400;margin-bottom: 16px;}p {font-style:font-size: 17px;color: #000;font-weight: 500;}</style></head><body><h1>Heart Failure</h1><h2>Congestive Heart Failure</h2><p>Heart Failure is a term used to describe a heart that cannot keep up with its workload. The body may not get the oxygen it needs.</p></body></html>",
+                "questionSummary": "Heart Failure",
+                "questionId": "drupalQuestionID5",
+                "responseItems": [
+                                  {
+                                  "optionId": "drupalQuestion5Option1ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Risk",
+                                  "chadsVascValue": "1"
+                                  },
+                                  "responseText": "Yes",
+                                  "order": 1
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion5Option2ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Not a Risk",
+                                  "chadsVascValue": "0"
+                                  },
+                                  "responseText": "No",
+                                  "order": 2
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion5Option3ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Unsure",
+                                  "chadsVascValue": "0"
+                                  },
+                                  "responseText": "I'm not sure",
+                                  "order": 3
+                                  }
+                                  ],
+                "imageURL": "https://s3-eu-west-1.amazonaws.com/pfe.newtonproject.dev.asset.artifacts/assets/afib/heart_disease.png",
+                "questionType": "MUTEX",
+                "questionText": "Have you ever been told that you have a <a>heart failure</a> or take medication for heart failure?",
+                "order": 5
+                },
+                {
+                "help": "<!DOCTYPE html><html><head><title>Shared Afib</title><style>body {font-family: -apple-system, BlinkMacSystemFont, sans-serif;width: 344px;text-align: center;}h1 {font-size: 20px;color: #3B88A1;font-weight: 700;padding-top: 24px;margin-bottom: 8px;}h2 {font-size: 15px;color: #4A4A4A;font-weight: 400;margin-bottom: 16px;}p {font-style:font-size: 17px;color: #000;font-weight: 500;}</style></head><body><h1>High Blood pressure</h1><h2>Hypertension</h2><p>You have high blood pressure when your blood pressure is consistently higher than normal. At this stage of high  blood pressure, doctors are likely to prescribe lifestyle changes and may consider  adding blood pressure medication.</p></body></html>",
+                "questionSummary": "High Blood Pressure",
+                "questionId": "drupalQuestionID6",
+                "responseItems": [
+                                  {
+                                  "optionId": "drupalQuestion6Option1ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Risk",
+                                  "chadsVascValue": "1"
+                                  },
+                                  "responseText": "Yes",
+                                  "order": 1
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion6Option2ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Not a Risk",
+                                  "chadsVascValue": "0"
+                                  },
+                                  "responseText": "No",
+                                  "order": 2
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion6Option3ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Unsure",
+                                  "chadsVascValue": "0"
+                                  },
+                                  "responseText": "I'm not sure",
+                                  "order": 3
+                                  }
+                                  ],
+                "imageURL": "https://s3-eu-west-1.amazonaws.com/pfe.newtonproject.dev.asset.artifacts/assets/afib/blood_pressure.png",
+                "questionType": "MUTEX",
+                "questionText": " Have you ever been told that you have <a>high blood pressure</a> or take medications for blood pressure?",
+                "order": 6
+                },
+                {
+                "help": "<!DOCTYPE html><html><head><title>Shared Afib</title><style>body {font-family: -apple-system, BlinkMacSystemFont, sans-serif;width: 344px;text-align: center;}h1 {font-size: 20px;color: #3B88A1;font-weight: 700;padding-top: 24px;margin-bottom: 8px;}h2 {font-size: 15px;color: #4A4A4A;font-weight: 400;margin-bottom: 16px;}p {font-style:font-size: 17px;color: #000;font-weight: 500;}</style></head><body><h1>Diabetes</h1><h2>Diabetes</h2><p>When you have diabetes, your body either doesn’t make enough insulin or can’t use its own insulin as well as it should, or both. This causes sugars to build up too high in your blood.</p></body></html>",
+                "questionSummary": "Diabetes",
+                "questionId": "drupalQuestionID7",
+                "responseItems": [
+                                  {
+                                  "optionId": "drupalQuestion7Option1ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Risk",
+                                  "chadsVascValue": "1"
+                                  },
+                                  "responseText": "Yes",
+                                  "order": 1
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion7Option2ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Not a Risk",
+                                  "chadsVascValue": "0"
+                                  },
+                                  "responseText": "No",
+                                  "order": 2
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion7Option3ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Unsure",
+                                  "chadsVascValue": "0"
+                                  },
+                                  "responseText": "I'm not sure",
+                                  "order": 3
+                                  }
+                                  ],
+                "imageURL": "https://s3-eu-west-1.amazonaws.com/pfe.newtonproject.dev.asset.artifacts/assets/afib/diabetes.png",
+                "questionType": "MUTEX",
+                "questionText": "Have you ever been told that you have <a>diabetes</a> or take medications to lower your blood sugar?",
+                "order": 7
+                },
+                {
+                "help": "<!DOCTYPE html><html><head><title>Shared Afib</title><style>body {font-family: -apple-system, BlinkMacSystemFont, sans-serif;width: 344px;text-align: center;}h1 {font-size: 20px;color: #3B88A1;font-weight: 700;padding-top: 24px;margin-bottom: 8px;}h2 {font-size: 15px;color: #4A4A4A;font-weight: 400;margin-bottom: 16px;}p {font-style:font-size: 17px;color: #000;font-weight: 500;}</style></head><body><h1>Stroke and Transient-Ischemic-Attack (TIA)</h1><h2>Transient-Ischemic-Attack (TIA)</h2><p>A Transient-Ischemic-Attack is a temporary blockage of blood flow to the brain.</p></body></html>",
+                "questionSummary": "Stroke",
+                "questionId": "drupalQuestionID8",
+                "responseItems": [
+                                  {
+                                  "optionId": "drupalQuestion8Option1ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Risk",
+                                  "chadsVascValue": "2"
+                                  },
+                                  "responseText": "Yes",
+                                  "order": 1
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion8Option2ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Not a Risk",
+                                  "chadsVascValue": "0"
+                                  },
+                                  "responseText": "No",
+                                  "order": 2
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion8Option3ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Unsure",
+                                  "chadsVascValue": "0"
+                                  },
+                                  "responseText": "I'm not sure",
+                                  "order": 3
+                                  }
+                                  ],
+                "imageURL": "https://s3-eu-west-1.amazonaws.com/pfe.newtonproject.dev.asset.artifacts/assets/afib/stroke.png",
+                "questionType": "MUTEX",
+                "questionText": "Have you ever been told that you have had a <a>stroke</a> or a <a>Transient-Ischemic-Attack (mini-stroke)</a>?",
+                "order": 8
+                },
+                {
+                "help": "<!DOCTYPE html><html><head><title>Shared Afib</title><style>body {font-family: -apple-system, BlinkMacSystemFont, sans-serif;width: 344px;text-align: center;}h1 {font-size: 20px;color: #3B88A1;font-weight: 700;padding-top: 24px;margin-bottom: 8px;}h2 {font-size: 15px;color: #4A4A4A;font-weight: 400;margin-bottom: 16px;}p {font-style:font-size: 17px;color: #000;font-weight: 500;}</style></head><body><h1>Peripheral  Artery Disease</h1><h2>Peripheral  Artery Disease</h2><p>Peripheral artery disease is a narrowing of the peripheral arteries to the legs, stomach, arms, and head -most commonly in the arteries of the legs.</p><h1>Plaque in your arteries</h1><h2>Aortic Plaque</h2><p>It’s the process in which deposits of fatty substances, cholesterol, cellular waste products,  calcium and  other substances  build  up  in the inner  lining  of an  artery. This buildup  is called plaque.</p></body></html>",
+                "questionSummary": "Artery Disease",
+                "questionId": "drupalQuestionID9",
+                "responseItems": [
+                                  {
+                                  "optionId": "drupalQuestion9Option1ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Risk",
+                                  "chadsVascValue": "1"
+                                  },
+                                  "responseText": "Yes",
+                                  "order": 1
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion9Option2ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Not a Risk",
+                                  "chadsVascValue": "0"
+                                  },
+                                  "responseText": "No",
+                                  "order": 2
+                                  },
+                                  {
+                                  "optionId": "drupalQuestion9Option3ID",
+                                  "responseControlType": "BUTTON",
+                                  "responseDesc": "",
+                                  "responseScoreValues": {
+                                  "riskFactor": "Unsure",
+                                  "chadsVascValue": "0"
+                                  },
+                                  "responseText": "I'm not sure",
+                                  "order": 3
+                                  }
+                                  ],
+                "imageURL": "https://s3-eu-west-1.amazonaws.com/pfe.newtonproject.dev.asset.artifacts/assets/afib/heart_attack.png",
+                "questionType": "MUTEX",
+                "questionText": "Have you ever been told that you have had any cardiovascular disease, like a heart attack, <a>peripheral artery disease</a> or any <a>plaque in your arteries</a>?",
+                "order": 9
+                }
+                ],
+  "questionnaireId": "drupalQuestionnaireID1",
+  "version": 2,
+  "introduction": "While these EHR tools may assist health care providers in identifying appropriate treatment for patients, the initiation of anticoagulation therapy should ultimately be decided by a health care provider in consultation with the patient, after a review of the patient’s medical history to determine sustainability.",
+  "animationType": "COMPLEXONDEVICE"
+  },
+  "modifiedBy": "42d78412-c96a-4581-97fd-d4f315ead735",
+  "id": "f7076be1-ca93-4f40-a51b-93ac42c6d794",
+  "lang": "en",
+  "resourceType": "asset"
+  }
+  ]

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Pfizer App Automation Test Suite IOS">
+	<listeners>
+		<listener class-name="utils.listeners.TestListener" />
+		<listener class-name="utils.listeners.AnnotationTransformer" />
+	</listeners>
+
+	<test name="Shared AFib Test E2E IOS">
+		<classes>
+		    
+			<class name="com.pfizer.testCasesIOS.SharedAFib" />
+		</classes>
+	</test>
+</suite>

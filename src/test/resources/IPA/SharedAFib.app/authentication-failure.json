@@ -1,0 +1,5 @@
+{
+    "stat":"error",
+    "error":"Some error message",
+    "error_description":"Missing arguments: flow, version, locale"
+}
