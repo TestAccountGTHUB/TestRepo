@@ -10,8 +10,7 @@ android:
     - android-24 
     - build-tools-24.0.1
     - extra-android-m2repository
-    - sys-img-armeabi-v7a-android-15
-    - sys-img-armeabi-v7a-android-21
+    - sys-img-armeabi-v7a-android-22
 script:
     # Create two emulator avds.
   - echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
