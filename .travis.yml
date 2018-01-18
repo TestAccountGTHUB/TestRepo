@@ -5,23 +5,27 @@ jdk: oraclejdk8
 android:
   components:
     - tools
-    - tools # This is not a typo. Needed for SDK update.
-    - platform-tools
-    - android-24 
-    - build-tools-24.0.1
+    - build-tools-24.0.2
+    - android-24
     - extra-android-m2repository
-    - sys-img-armeabi-v7a-android-22
+    - extra-google-m2repository
+    - extra-android-support
+    - sys-img-armeabi-v7a-android-22 # <---- This should add the system image
+install: 
+  - bundle install --jobs=3 --retry=3 --path=${BUNDLE_PATH:-vendor/bundle}
+before_cache:
+  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    - ./vendor/bundle
+before_script:
+  - android list targets # list pre-installed targets # <---- list all installed targets
+  - android list sdk --no-ui --all --extended | grep -E '^id:' | awk -F '"' '{$1=""; print $2}' # <---- list all available components
+  - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a # <---- this is failing, "Target id is not valid"
+  - emulator -avd test -no-audio -no-window &
+  - android-wait-for-emulator
+  - adb shell input keyevent 82 &
 script:
-    # Create two emulator avds.
-  - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
-  
-    # Start the first emulator.
-  - emulator -avd test -no-skin -no-audio -no-window &
-    # Wait for the first emulator to start.
-  - sh /wait-for-first-emulator.sh
-
-    # Unlock the devices.
-  - adb -s emulator-5554 shell input keyevent 82 &
-
-    # Run the script.
-  - sh /script.sh
+  - mvn test -DtestPlatform=Android
