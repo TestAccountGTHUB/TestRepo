@@ -1,1 +1,6 @@
-mvn test -DtestPlatform=Android
+language: android
+sudo: required
+jdk: oraclejdk8
+
+script:
+ - mvn test -DtestPlatform=Android
