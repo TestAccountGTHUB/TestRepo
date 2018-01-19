@@ -6,16 +6,10 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y pax
   - sudo apt-get update
-  - sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
-  - sudo ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
-  - export PATH=”$HOME/.linuxbrew/bin:$PATH” 
-  - export MANPATH=”$HOME/.linuxbrew/share/man:$MANPATH”
-  - export INFOPATH=”$HOME/.linuxbrew/share/info:$INFOPATH”
-  - sudo apt install linuxbrew-wrapper
-  - sudo brew update
-  - sudo brew install node
-  - sudo brew link node
-  - suso npm install -g appium
+  - sudo apt-get install node
+  - node -v
+  - npm -v
+  - sudo npm install -g appium
 
 env:
   global:
