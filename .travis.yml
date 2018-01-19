@@ -1,5 +1,6 @@
 language: android
 os: osx
+osx_image: xcode9.1
 sudo: required
 jdk: oraclejdk8
 
