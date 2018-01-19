@@ -4,9 +4,8 @@ sudo: required
 jdk: oraclejdk8
 
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install node
-  - sudo apt-get install npm
+  - sudo brew update
+  - sudo brew install node
   - node -v
   - npm -v
   - sudo npm install -g appium
