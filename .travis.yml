@@ -1,44 +1,33 @@
-language: android
-sudo: required
-jdk: oraclejdk8
+matrix:
+  include:
+    - language: python
+      python: 2.7
+      before_script:
+        - cd backend/tests
+      script:
+        - python -m unittest discover
 
-before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y pax
-  - sudo apt-get update
-  - sudo apt-get install node
-  - node -v
-  - npm -v
-  - sudo npm install -g appium
+    - language: android
+      jdk: oraclejdk8
+      android:
+        components:
+          - tools
+          - android-25
+          - build-tools-25.0.3
+      before_script:
+        - cd android/AppName
+      script:
+        - ./gradlew build connectedCheck
 
-env:
-  global:
-  - ANDROID_API_LEVEL=26
-  - ANDROID_BUILD_TOOLS_VERSION=26.0.1
-  - ANDROID_EMU_API_LEVEL=22
-  - ANDROID_ABI=armeabi-v7a
-  - ADB_INSTALL_TIMEOUT=20 # minutes (2 minutes by default)
-  - QEMU_AUDIO_DRV=none # Remove audio
-cache:
-  directories:
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
-    - $HOME/.android/build-cache
-android:
-  components:
-  - tools
-  - platform-tools
-  - tools
-  - build-tools-$ANDROID_BUILD_TOOLS_VERSION
-  - android-$ANDROID_API_LEVEL
-  - android-$ANDROID_EMU_API_LEVEL
-  - extra-android-support
-  - sys-img-$ANDROID_ABI-google_apis-$ANDROID_EMU_API_LEVEL
-before_script:
-  - echo -e "Host github.com\n\tHostName github.com\n\tUser git\n\tIdentityFile ~/.ssh/id_travisci\n" >> ~/.ssh/config
-  - echo no | android create avd --force -n test -t android-$ANDROID_EMU_API_LEVEL --abi google_apis/$ANDROID_ABI
-  - emulator -avd test -no-window &
-  - android-wait-for-emulator
-  - adb shell input keyevent 82 &
-script:
-  - mvn test -DtestPlatform=Android
+    - language: objective-c
+      os: osx
+      osx_image: xcode8.3
+      before_script:
+        - cd ios/AppName
+      script:
+        - xcodebuild -workspace AppName.xcworkspace -scheme AppName
+          -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3' build test
+
+notifications:
+  email:
+    - akshaychouhan@appnovation.com
