@@ -6,18 +6,8 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y pax
   - sudo apt-get update
-  - sudo ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
-  - sudo apt-get install build-essential
-  - echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >>~/.bash_profile
-  - echo 'export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"' >>~/.bash_profile
-  - echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.bash_profile
-  - PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-  - sudo brew install gcc
-  - sudo brew install hello
   - sudo brew install node
-  
-install:  
-  - "npm install -g appium"
+
 env:
   global:
   - ANDROID_API_LEVEL=26
@@ -48,4 +38,5 @@ before_script:
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
 script:
+  - npm install -g appium
   - mvn test -DtestPlatform=Android
