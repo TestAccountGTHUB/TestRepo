@@ -6,7 +6,7 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y pax
   - sudo apt-get update
-  - sudo brew install node
+  - sudo apt-get install node
 
 env:
   global:
