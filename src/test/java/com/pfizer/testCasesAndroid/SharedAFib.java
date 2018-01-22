@@ -282,7 +282,6 @@ public class SharedAFib extends BaseTest {
 			capabilities.setCapability("appPackage", "com.pfizer.us.sharedafib");
 			capabilities.setCapability("appActivity", "com.pfizer.us.sharedafib.features.splash.SplashActivity");
 			capabilities.setCapability("fullReset", "true");
-			capabilities.setCapability("noReset", "true");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			APP_LOGS.error("Exception while Invoking Appium Service");
