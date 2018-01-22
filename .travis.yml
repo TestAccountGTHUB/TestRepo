@@ -10,15 +10,14 @@ env:
   - ANDROID_ABI=armeabi-v7a
   - ADB_INSTALL_TIMEOUT=20 # minutes (2 minutes by default)
   - QEMU_AUDIO_DRV=none # Remove audio
+ install:
+    - nvm install 0.10
+    - npm install
 cache:
   directories:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
     - $HOME/.android/build-cache
-  install:
-    - pip install -r requirements/dev.txt
-    - nvm install 0.10
-    - npm install
 android:
   components:
   - tools
