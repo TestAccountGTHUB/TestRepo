@@ -61,7 +61,7 @@ public class SharedAFib extends BaseTest {
 		try {
 			if (environment.equalsIgnoreCase("Local")) {
 				driver = new AndroidDriver<WebElement>(new URL(getAppiumServiceUrl()), capabilities);
-				driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+				driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
 			}
 			if (environment.equalsIgnoreCase("Cloud")) {
 				driver = new AppiumDriver<WebElement>(new URL("https://us1.appium.testobject.com/wd/hub"),
