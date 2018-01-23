@@ -2,7 +2,7 @@ language: android
 sudo: required
 jdk: oraclejdk8
 install:
-    - nvm install node
+    - nvm install npm@latest -g
 env:
   global:
   - ANDROID_API_LEVEL=26
