@@ -276,9 +276,9 @@ public class SharedAFib extends BaseTest {
 			capabilities.setCapability("platformName", "Android");
 			capabilities.setCapability("platformVersion", osVersion);
 			capabilities.setCapability("newCommandTimeout", 300000);
-		        capabilities.setCapability("skipUnlock", true);
-		        capabilities.setCapability("unicodeKeyboard", true);
-		        capabilities.setCapability("resetKeyboard", true);
+		        //capabilities.setCapability("skipUnlock", true);
+		        //capabilities.setCapability("unicodeKeyboard", true);
+		        //capabilities.setCapability("resetKeyboard", true);
 			capabilities.setCapability("app",
 					System.getProperty("user.dir") + "/src/test/resources/APK/SharedAfib.apk");
 			capabilities.setCapability("appPackage", "com.pfizer.us.sharedafib");
