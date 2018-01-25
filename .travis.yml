@@ -34,6 +34,9 @@ before_script:
   - android-wait-for-emulator
   # Unlock the devices.
   - adb -s emulator-5554 shell input keyevent 82 &
+  - adb shell pm uninstall -k com.pfizer.us.sharedafib
+  - adb kill-server
+  - adb start-server
   - adb install -r src/test/resources/APK/SharedAfib.apk
 script:
   - mvn test -DtestPlatform=Android
