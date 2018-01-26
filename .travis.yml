@@ -1,38 +1,21 @@
-language: android
-sudo: required
-jdk: oraclejdk8
+os: osx
+osx_image: xcode9.2
+language: objective-c
 install:
-    - nvm install node
-env:
-  global:
-  - ANDROID_API_LEVEL=26
-  - ANDROID_BUILD_TOOLS_VERSION=26.0.1
-  - ANDROID_EMU_API_LEVEL=22
-  - ANDROID_ABI=armeabi-v7a
-  - ADB_INSTALL_TIMEOUT=20 # minutes (2 minutes by default)
-  - QEMU_AUDIO_DRV=none # Remove audio
-cache:
-  directories:
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
-    - $HOME/.android/build-cache
-android:
-  components:
-  - tools
-  - platform-tools
-  - tools
-  - build-tools-$ANDROID_BUILD_TOOLS_VERSION
-  - android-$ANDROID_API_LEVEL
-  - android-$ANDROID_EMU_API_LEVEL
-  - extra-android-support
-  - sys-img-$ANDROID_ABI-google_apis-$ANDROID_EMU_API_LEVEL
-before_script:
+  - nvm install node
+  - brew update
+  - brew cask install java
   - npm install -g appium
-  - echo -e "Host github.com\n\tHostName github.com\n\tUser git\n\tIdentityFile ~/.ssh/id_travisci\n" >> ~/.ssh/config
-  - echo no | android create avd --force -n emulator-5554 -t android-$ANDROID_EMU_API_LEVEL --abi google_apis/$ANDROID_ABI
-  - emulator -avd emulator-5554 -no-window -wipe-data &
-  - android-wait-for-emulator
-  # Unlock the devices.
-  - adb -s emulator-5554 shell input keyevent 82 &
+  - brew upgrade carthage
+  - npm install -g ios-deploy
+  - gem install xcpretty
+  - npm install -g appium-doctor
+  - npm install -g appium-xcuitest-driver
+  - which java
+  - which appium
+before_script:
+  - java -version
+  - appium-doctor
+  - find . -name 'appium-xcuitest-driver'
 script:
-  - mvn test -DtestPlatform=Android
+  - cd pfizerappautomation/
