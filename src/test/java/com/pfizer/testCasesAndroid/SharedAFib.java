@@ -280,7 +280,7 @@ public class SharedAFib extends BaseTest {
 		        capabilities.setCapability("unicodeKeyboard", true);
 		        capabilities.setCapability("resetKeyboard", true);
 			capabilities.setCapability("app",
-					System.getProperty("user.dir") + "/src/test/resources/APK/SharedAfib.apk");
+					System.getProperty("user.dir") + "/src/test/resources/APK/app-dev-debug.apk");
 			capabilities.setCapability("appPackage", "com.pfizer.us.sharedafib");
 			capabilities.setCapability("appActivity", "com.pfizer.us.sharedafib.features.splash.SplashActivity");
 			capabilities.setCapability("fullReset", true);
