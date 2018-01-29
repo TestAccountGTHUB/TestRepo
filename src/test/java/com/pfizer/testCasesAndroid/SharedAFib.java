@@ -276,14 +276,14 @@ public class SharedAFib extends BaseTest {
 			capabilities.setCapability("platformName", "Android");
 			capabilities.setCapability("platformVersion", osVersion);
 			capabilities.setCapability("newCommandTimeout", 300000);
-		        capabilities.setCapability("skipUnlock", true);
-		        capabilities.setCapability("unicodeKeyboard", true);
-		        capabilities.setCapability("resetKeyboard", true);
+		        //capabilities.setCapability("skipUnlock", true);
+		        //capabilities.setCapability("unicodeKeyboard", true);
+		        //capabilities.setCapability("resetKeyboard", true);
 			capabilities.setCapability("app",
 					System.getProperty("user.dir") + "/src/test/resources/APK/app-dev-debug.apk");
 			capabilities.setCapability("appPackage", "com.pfizer.us.sharedafib");
 			capabilities.setCapability("appActivity", "com.pfizer.us.sharedafib.features.splash.SplashActivity");
-			capabilities.setCapability("fullReset", true);
+			//capabilities.setCapability("fullReset", true);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			APP_LOGS.error("Exception while Invoking Appium Service");
